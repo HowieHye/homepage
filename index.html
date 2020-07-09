@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta itemprop="name" content="HowieHye - Homepage" />
+    <meta
+      itemprop="image"
+      content="https://cdn.jsdelivr.net/gh/HowieHye/CDN//img/avatar.png"
+    />
+    <meta
+      name="description"
+      itemprop="description"
+      content="一个有趣的灵魂!"
+    />
+    <title>HowieHye - Homepage</title>
+    <link rel="stylesheet" href="static/css/style.min.css" />
+  </head>
+  <body>
+    <div id="bg"><div class="backstretch"></div></div>
+    <div class="container">
+      <header id="header">
+        <a href="" class="title router-link-active">HowieHye</a
+        ><span class="subtitle">一个有趣的灵魂！</span>
+      </header>
+      <div data-v-2cd26717="" class="page">
+        <div data-v-2cd26717="" class="quote">
+          <i class="icon icon-quote-left"></i
+          ><span>风雨中要像个大人,天晴时要像个孩子</span
+          ><i class="icon icon-quote-right"></i>
+        </div>
+        <div data-v-2cd26717="" class="content">
+          <div data-v-2cd26717="" class="header">
+            <img data-v-2cd26717="" src="https://picture.howiehye.top/img/avatar.png" alt="" />
+            <div data-v-2cd26717="" class="info">
+              <span data-v-2cd26717=""
+                ><i data-v-2cd26717="" class="icon icon-fort-awesome"></i>
+                HowieHye </span
+              ><span data-v-2cd26717=""
+                ><i data-v-2cd26717="" class="icon icon-pagelines"></i>
+                一条有着远大理想的咸鱼 </span
+              ><span data-v-2cd26717=""
+                ><i data-v-2cd26717="" class="icon icon-graduation-cap"></i>
+                <a href="" rel="noopener noreferrer"
+                  >https://yuyuu.top</a
+                > </span
+              ><span data-v-2cd26717=""
+                ><i data-v-2cd26717="" class="icon icon-tripadvisor"></i>
+                励志做一名优秀的电子工程师！</span
+              >
+            </div>
+          </div>
+          <div data-v-2cd26717="" class="contact">
+            <a
+              data-v-2cd26717=""
+              href="javascript:window.open('https://www.howiehye.top/');"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><img
+                data-v-2cd26717=""
+                alt=""
+                src="static/picture/H8086e5cab3c543c5ba3669fbdb6fdf8.jpg" /></a
+            ><a
+              data-v-2cd26717=""
+              href="javascript:window.open('https://github.com/howiehye');"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><img
+                data-v-2cd26717=""
+                alt=""
+                src="static/picture/Hbb03e51fbd8141cb96c771e1af4f26e.jpg" /></a
+            ><a
+              data-v-2cd26717=""
+              href="javascript:window.open('https://howiehye.top/link/');"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><img
+                data-v-2cd26717=""
+                alt=""
+                src="static/picture/H2ff78636cc5d42418fe73287261ae5d.jpg" /></a
+            >
+          </div>
+          <div
+            data-v-2cd26717=""
+            class="segment"
+            style="border-color: #f596aa;"
+          >
+            <div class="label" style="color: #f596aa;"><span>关于</span></div>
+            <div data-v-2cd26717="" class="markdown">
+              <p>
+                Welcome to my homepage!
+                Thinks for <a href="https://xiaokang.me">Dreamy.Tzk</a>
+              </p>
+            </div>
+          </div>
+<!--          <div-->
+<!--            data-v-2cd26717=""-->
+<!--            class="segment"-->
+<!--            style="border-color: #e79460;"-->
+<!--          >-->
+<!--            <div class="label" style="color: #e79460;"><span>一言</span></div>-->
+<!--            <div data-v-2cd26717="" class="markdown">-->
+<!--              <p class="quote-content">loading....</p>-->
+<!--            </div>-->
+<!--          </div>-->
+        </div>
+      </div>
+      <footer id="footer">
+        <div class="site-info">
+          <p>
+            Copyright <i class="icon icon-copyright"></i> 2020
+            <i class="icon icon-heart"></i> HowieHye
+          </p>
+          <p>
+            Power By <a href="https://xiaokang.me">Dreamy.Tzk</a>
+          </p>
+<!--          <p>-->
+<!--            CDN - -->
+<!--            <a-->
+<!--              rel="noopener noreferrer"-->
+<!--              target="_blank"-->
+<!--              href="javascript:window.open('https://www.jsdelivr.com/');"-->
+<!--              >jsDelivr</a-->
+<!--            >-->
+<!--            | HOST - -->
+<!--            <a-->
+<!--              rel="noopener noreferrer"-->
+<!--              target="_blank"-->
+<!--              href="javascript:window.open('https://www.coding.net/');"-->
+<!--              >CODING</a-->
+<!--            >-->
+<!--          </p>-->
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/jquery.backstretch.min.js"></script>
+    <script>
+      (function () {
+        var t = [
+          "https://cdn.jsdelivr.net/gh/HowieHye/CDN//img/20200702120120.jpg"
+        ];
+        window
+          .$("#bg")
+          .backstretch(t, {
+            duration: 1e4,
+            alignY: 0,
+            transition: "fade",
+            transitionDuration: 1e3,
+          }),
+          $(document).ready(function () {
+            $.getJSON("https://v1.hitokoto.cn/?a=g&encode=json", function (t) {
+              var e = "",
+                i = "";
+              (e = t.hitokoto),
+                (i = t.from),
+                $(".quote-content").html("「 " + e + " 」——" + i);
+            })();
+          });
+      })();
+    </script>
+  </body>
+</html>
