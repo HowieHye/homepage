@@ -150,16 +150,16 @@
                 alignY: 0,
                 transition: "fade",
                 transitionDuration: 1e3,
-            }),
-            $(document).ready(function () {
-                $.getJSON("https://v1.hitokoto.cn/?a=g&encode=json", function (t) {
-                    var e = "",
-                        i = "";
-                    (e = t.hitokoto),
-                        (i = t.from),
-                        $(".quote-content").html("「 " + e + " 」——" + i);
-                })();
             });
+            // $(document).ready(function () {
+            //     $.getJSON("https://v1.hitokoto.cn/?a=g&encode=json", function (t) {
+            //         var e = "",
+            //             i = "";
+            //         (e = t.hitokoto),
+            //             (i = t.from),
+            //             $(".quote-content").html("「 " + e + " 」——" + i);
+            //     })();
+            // });
     })();
 </script>
 </body>
